@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# 大文件走 Git LFS（见 .gitattributes）
+# 权重与预测包由 LFS 管理，不再用 gitignore 排除
+
+# 运行产物
+outputs/
+runs/
+logs/
+*.log
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,53 @@
+{
+  "_说明": "扩展阶段最终输出配置。同目录的 final_output.json 是前序阶段的记录，勿混用。",
+  "team_id": "AIC-2026-59375991",
+  "stage": "semifinal",
+  "final_score_miou":,
+  "final_model_count": 1,
+  "final_state": "ema",
+  "parent": {
+    "file": "ckpt_kan_s2_i600_c1_alpha075_20261003.pth",
+    "sha256": "60c499b9d860f2dd71ef964f047d4dbeed47a3b724f75f8a0b59a78bcf46952d",
+    "score":,
+    "note": "前序阶段终点 R0，含 test_2 1300 张的 BN 统计混合 alpha=0.75"
+  },
+  "decoder_finetune": {
+    "steps": 12800,
+    "batch": 4,
+    "crops": 51200,
+    "lr": 1e-05,
+    "lr_schedule": "cosine to 0.1x",
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "amp": "bfloat16",
+    "ema": 0.99,
+    "seed": 42,
+    "frozen": ["encoder", "dfr", "all_bn_running_stats"],
+    "trainable_params": 2670000,
+    "loss": {
+      "formula": "0.20 * L_sup + 1.0 * L_KL",
+      "L_sup": "boundary_weighted_CE + Dice + 0.5*Lovasz",
+      "L_KL": "parent decoder soft prediction at 256x256, channels 1-8",
+      "class_weight": [0.40, 0.49, 0.65, 0.94, 1.66, 0.37, 0.90, 2.59]
+    },
+    "augmentation": ["hflip 0.5", "vflip 0.5", "rot90 0.25"],
+    "chain": [
+      {"stage": "v2", "parent": "R0", "steps": 1600, "crops": 6400, "val500": 0.758314, "score":},
+      {"stage": "r2", "parent": "v2", "steps": 3200, "crops": 12800, "val500": 0.761884, "score": null},
+      {"stage": "r3", "parent": "r2", "steps": 6400, "crops": 25600, "val500": 0.764587, "score":},
+      {"stage": "sw", "parent": "r3", "steps": 12800, "crops": 51200, "val500": 0.766757, "score":}
+    ]
+  },
+  "inference": {
+    "input_size": 1024,
+    "aggregation": "probability_average",
+    "passes": [[1.0, false], [1.0, true], [0.75, false], [0.75, true],
+               [1.25, false], [1.25, true], [1.5, false], [0.5, false]],
+    "bn_recalibration": false,
+    "post_processing": "none",
+    "output_labels": [1, 8],
+    "test_images": 3594
+  },
+  "model_sha256": "873bb246c889012c9e873ce9c2df4a946a30e8cd116de383f8eb0967ced832b9",
+  "result_zip_sha256": "6a337e66218f402474bfe32c11331a26fe938556ec6cc1e41e5a4a4a1330d974"
+}
