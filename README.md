@@ -280,14 +280,17 @@ KAN 基函数采用网格数 5、样条阶数 3。
 
 ## 📌 复现说明
 
-1. **权重与预测结果均已附带**。`weights/best_model.pth`（391.8 MB）与 `predictions/predictions.zip`
-   （37.6 MB）随本仓库提供，可直接复现下表结果，无需另行获取。
-2. **训练可复现但非逐字节一致**。四段训练使用固定种子（42）与固定数据顺序；
+1. **最终权重与预测结果均已附带**。`weights/best_model.pth`（391.8 MB，即四段微调链的最后一环）
+   与 `predictions/predictions.zip`（37.6 MB）随本仓库提供，可直接复现下表结果，无需另行获取。
+2. **权重链的起点 R0 未附带**。本仓库只有最终权重；若要重跑四段约束微调链，
+   需先按 `docs/repro/REPRODUCE_FROM_SCRATCH.md` 训练得到父权重 R0。
+   原因与替代方案见 `weights/README.md` 第二、三节。
+3. **训练可复现但非逐字节一致**。四段训练使用固定种子（42）与固定数据顺序；
    跨 GPU / 驱动 / PyTorch 版本会有浮点差异，属正常现象，应以重新评测结果为准。
-3. **推理结果同理**。实测在 Python 3.13 + torch 2.6 + timm 1.0.28 环境下重跑，
+4. **推理结果同理**。实测在 Python 3.13 + torch 2.6 + timm 1.0.28 环境下重跑，
    与归档预测的像素差异 ≤ 0.004%，差异集中在类别边界。
-4. **无后处理**。不做连通域过滤、孔洞填充或类别偏置，argmax 后仅做值域裁剪。
-5. **`pipeline/` 是完整训练链**。`train.py` / `inference.py` / `evaluate.py` 是精简后的独立入口；
+5. **无后处理**。不做连通域过滤、孔洞填充或类别偏置，argmax 后仅做值域裁剪。
+6. **`pipeline/` 是完整训练链**。`train.py` / `inference.py` / `evaluate.py` 是精简后的独立入口；
    要复现从零到最终的全过程，用 `pipeline/` 下的 `kan_pipeline/` 与 `train_decoder.py`，
    步骤见 `docs/repro/REPRODUCE_FROM_SCRATCH.md` 与 `REPRODUCE_DECODER_CHAIN.md`。
    其中用到的公开预训练权重（Swin-B 等，约 526 MB）未随仓库提供，需自行下载。

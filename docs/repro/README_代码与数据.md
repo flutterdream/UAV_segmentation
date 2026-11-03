@@ -85,7 +85,7 @@ pip install timm==1.0.30 \
 cd 代码与数据/code
 
 python inference.py \
-    --ckpt ../checkpoints/best_model.pth \
+    --ckpt ../weights/best_model.pth \
     --images /path/to/test_3/images \
     --out ../predictions/png \
     --zip ../predictions/predictions.zip
@@ -158,7 +158,7 @@ python train.py --images $DATA/images --masks $DATA/masks \
 | 增强 | 仅几何：水平翻转 0.5 / 垂直翻转 0.5 / 旋转 90° 0.25 |
 | 数据顺序 | 固定种子打乱后**顺序消费**，保证任一步可精确对齐 |
 
-完整超参与四段结果见 `code/configs/decoder_finetune.yaml`。
+完整超参与四段结果见 `configs/decoder_finetune.yaml`。
 
 ### 4.2 四段训练结果
 
@@ -178,7 +178,7 @@ python train.py --images $DATA/images --masks $DATA/masks \
 
 | 项 | 值 |
 |---|---|
-| 权重 `checkpoints/best_model.pth` | 391,818,938 B　SHA256 `873bb246c889012c9e873ce9c2df4a946a30e8cd116de383f8eb0967ced832b9` |
+| 权重 `weights/best_model.pth` | 391,818,938 B　SHA256 `873bb246c889012c9e873ce9c2df4a946a30e8cd116de383f8eb0967ced832b9` |
 | 预测 `predictions/predictions.zip` | 37,569,220 B　SHA256 `6a337e66218f402474bfe32c11331a26fe938556ec6cc1e41e5a4a4a1330d974` |
 | 包内文件 | 3594 张单通道 PNG，1024×1024，像素值 1–8，平铺无子目录 |
 
@@ -188,7 +188,7 @@ python train.py --images $DATA/images --masks $DATA/masks \
 校验命令：
 
 ```bash
-sha256sum checkpoints/best_model.pth predictions/predictions.zip
+sha256sum weights/best_model.pth predictions/predictions.zip
 python - <<'PY'
 import zipfile, numpy as np, io
 from PIL import Image
@@ -220,6 +220,6 @@ PY
 ## 七、合规声明
 
 - **单一模型**：全程单模型推理，八路 TTA 为同一模型的多视图概率平均，**不构成模型集成**。
-- **数据**：仅使用赛事官方提供的训练集与测试集，未引入任何外部数据。
+- **数据**：仅使用官方提供的训练集与测试集，未引入任何外部数据。
 - **预训练权重**：仅使用第二节列出的学术公开权重，未使用商业闭源模型。
 - **复现材料**：训练代码、推理代码、配置、权重、预测结果齐备，可按本文档完成推理复现。

@@ -6,9 +6,9 @@
 > | 开发阶段脚本（本目录 `code/`） | 预测包精简版（`代码与数据/code/`） |
 > |---|---|
 > | `train_decoder.py` | `train.py`（去掉环境锁定，路径改为命令行参数） |
-> | `infer_p0.py` + `kan_pipeline/final_pipeline.py` | `inference.py`（8 路概率平均已内联） |
+> | `infer_p0.py` + `pipeline/kan_pipeline/final_pipeline.py` | `inference.py`（8 路概率平均已内联） |
 > | `drive_sweep.py`（快照扫描） | 未单独提供，训练脚本支持按步数存档 |
-> | `sw_s12800.pth` | `../checkpoints/best_model.pth` |
+> | `sw_s12800.pth` | `../weights/best_model.pth` |
 >
 > `v2.pth` / `r2.pth` / `r3.pth` 为中间权重，未随包提供，按本文命令可重训。
 
@@ -25,7 +25,7 @@
 
 | 项目 | 内容 |
 |---|---|
-| 父权重 R0 | `ckpt_kan_s2_i600_c1_alpha075_20261003.pth`（随包提供） |
+| 父权重 R0 | `ckpt_kan_s2_i600_c1_alpha075_20261003.pth`（**未随本仓库提供**，需先按 `REPRODUCE_FROM_SCRATCH.md` 训练得到） |
 | R0 指纹 | SHA256 `60c499b9d860f2dd71ef964f047d4dbeed47a3b724f75f8a0b59a78bcf46952d` |
 | 训练数据 | 官方 train 6996 张 1024×1024；排除 `split.json` 中 500 个 val id，余 **6496 张** |
 | 验证数据 | 同 500 个 val id（源域诊断，不作选型唯一依据） |

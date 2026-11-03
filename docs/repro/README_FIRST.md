@@ -13,9 +13,9 @@
 
 | 需要什么 | 去哪里 |
 |---|---|
-| **复现 的推理** | `代码与数据/README.md`（主文档）+ `代码与数据/code/inference.py` |
-| 四段解码器微调的训练代码 | `代码与数据/code/train.py` |
-| 最终权重 | `代码与数据/checkpoints/best_model.pth` |
+| **复现 的推理** | `README.md`（主文档）+ `inference.py` |
+| 四段解码器微调的训练代码 | `train.py` |
+| 最终权重 | `weights/best_model.pth` |
 | 复现父权重 R0（） | 本目录 `REPRODUCE_FROM_SCRATCH.md` |
 
 换句话说：**本目录 = 上游（教师链 → Swin/KAN 链 → BN 统计混合 → R0）**，
@@ -38,7 +38,7 @@
 ## 三、运行环境
 
 本包**不使用 Docker**。环境用 Conda 创建，完整命令见
-`代码与数据/README.md` 第 2.1 节（Python 3.12.3 / torch 2.5.1+cu124 / timm 1.0.30 /
+`README.md` 第 2.1 节（Python 3.12.3 / torch 2.5.1+cu124 / timm 1.0.30 /
 segmentation-models-pytorch 0.5.0）。
 
 前序阶段曾用三套隔离环境（teacher / kan / stage47），其版本锁定清单保留在本目录
@@ -55,7 +55,7 @@ segmentation-models-pytorch 0.5.0）。
 | SegFormer-B2 `mit_b2` | 教师链编码器 | https://huggingface.co/smp-hub/mit_b2.imagenet |
 | DINOv2-small | 教师链域特征聚类 | https://huggingface.co/facebook/dinov2-small |
 
-三者**均不参与扩展阶段最终推理**，最终推理只用 `代码与数据/checkpoints/best_model.pth`。
+三者**均不参与扩展阶段最终推理**，最终推理只用 `weights/best_model.pth`。
 
 ## 五、完整性检查
 
@@ -67,4 +67,4 @@ python 归档校验/VERIFY_SUBMISSION.py
 
 ## 六、数据
 
-仅使用赛事官方提供的训练集与测试集，数据集不随包提供，准备方式见 `DATA_SETUP.md`。
+仅使用官方提供的训练集与测试集，数据集不随包提供，准备方式见 `DATA_SETUP.md`。
