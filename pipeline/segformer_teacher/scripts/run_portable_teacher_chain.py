@@ -46,7 +46,7 @@ def run(stage: str, command: list[str], logs: Path, expected: Path | None = None
         "duration_seconds": time.time() - started,
         "resumed": "--resume" in command,
         "output": str(expected) if expected else None,
-        "output_sha256": sha256(expected) if expected and expected.is_file() else None,
+        "output_sha256": sha256(expected) if expected and expected.is_file() else None
     }
     (logs / f"{stage}.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -90,7 +90,7 @@ def main() -> None:
         "HF_HUB_OFFLINE": "1",
         "TRANSFORMERS_OFFLINE": "1",
         "HF_HOME": str(archive / "work" / "hf_cache"),
-        "HUGGINGFACE_HUB_CACHE": str(archive / "work" / "hf_cache" / "hub"),
+        "HUGGINGFACE_HUB_CACHE": str(archive / "work" / "hf_cache" / "hub")
     })
     py = sys.executable
 
@@ -109,7 +109,7 @@ def main() -> None:
             "status": "preparation_complete_no_training",
             "image_stats_csv": str(stats), "image_stats_sha256": sha256(stats),
             "folds_csv": str(split), "folds_sha256": sha256(split),
-            "training_started": False, "candidate": False,
+            "training_started": False, "candidate": False
         }, ensure_ascii=False, indent=2), encoding="utf-8")
         return
     execute("extract_domain_features", [py, str(project / "scripts" / "extract_domain_features.py"), "--root", str(data), "--model-dir", str(dino), "--batch-size", "32", "--workers", "2", "--output", str(features)], features)

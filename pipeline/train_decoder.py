@@ -15,7 +15,7 @@ from copy import deepcopy
 from pathlib import Path
 
 ROOT = Path("/root/autodl-tmp/aic_semi")
-os.environ.setdefault("AIC_SKIP_VERIFY", "1")
+os.environ.setdefault("_SKIP_VERIFY", "1")
 os.environ["HF_HOME"] = str(ROOT / "public_pretrained" / "huggingface")
 os.environ["HF_HUB_CACHE"] = str(ROOT / "public_pretrained" / "huggingface" / "hub")
 os.environ["HF_HUB_OFFLINE"] = "1"

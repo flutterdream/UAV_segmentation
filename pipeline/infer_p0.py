@@ -4,7 +4,7 @@ import argparse, json, os, sys, time, zipfile
 from pathlib import Path
 
 ROOT = Path("/root/autodl-tmp/aic_semi")
-os.environ.setdefault("AIC_SKIP_VERIFY", "1")
+os.environ.setdefault("_SKIP_VERIFY", "1")
 os.environ["HF_HOME"] = str(ROOT / "public_pretrained" / "huggingface")
 os.environ["HF_HUB_CACHE"] = str(ROOT / "public_pretrained" / "huggingface" / "hub")
 os.environ["HF_HUB_OFFLINE"] = "1"
@@ -65,7 +65,7 @@ def main():
         if i % 200 == 0:
             el = (time.time() - t0) / 60
             log(f"  {i}/{len(files)}  {el:.0f} min  剩约 {(len(files)-i)*el/i:.0f} min")
-    zp = ROOT / f"submission_{a.tag}.zip"
+    zp = ROOT / f"predictions_{a.tag}.zip"
     with zipfile.ZipFile(zp, "w", zipfile.ZIP_STORED) as z:
         for fn in files:
             z.write(out / fn, fn)

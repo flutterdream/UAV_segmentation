@@ -66,7 +66,7 @@ def configure_process() -> None:
         "TRANSFORMERS_OFFLINE": "1",
         "TORCH_HOME": str(RUNTIME_ROOT / "torch"),
         "XDG_CACHE_HOME": str(RUNTIME_ROOT / "xdg"),
-        "CUDA_CACHE_PATH": str(RUNTIME_ROOT / "cuda"),
+        "CUDA_CACHE_PATH": str(RUNTIME_ROOT / "cuda")
     }
     for key, value in forced.items():
         os.environ[key] = value
@@ -78,7 +78,7 @@ def verify_inputs() -> dict[str, Any]:
         TRAIN_IMAGES: 6996,
         TRAIN_MASKS: 6996,
         TEST1_IMAGES: 500,
-        TEST2_IMAGES: 1300,
+        TEST2_IMAGES: 1300
     }
     for directory, wanted in expected.items():
         actual = sum(1 for _ in directory.glob("*.png"))
@@ -115,7 +115,7 @@ def strict_metadata(stage: str, seed: int, parents: list[str] | None = None) -> 
         "seed": int(seed),
         "parents": list(parents or ["public_swin_b"]),
         "public_weight_sha256": PUBLIC_WEIGHT_SHA256,
-        "input_manifest_sha256": _sha256(REPRO_ROOT / "INPUT_MANIFEST.json"),
+        "input_manifest_sha256": _sha256(REPRO_ROOT / "INPUT_MANIFEST.json")
     }
 
 

@@ -8,7 +8,7 @@
 
 ## 输入和初始化
 
-train、test1、test2原始数据不随预测包提供。请按DATA_SETUP.md准备赛事方官方数据；Docker模式将外部数据目录只读挂载到容器的 `/workspace/submission/official_data`。算法配置与训练流程不变。
+train、test1、test2原始数据不随预测包提供。请按DATA_SETUP.md准备赛事方官方数据；Docker模式将外部数据目录只读挂载到容器的 `/workspace/output/official_data`。算法配置与训练流程不变。
 
 从空 work 目录执行 python scripts/entrypoint.py reproduce。允许输入为 official_data、public_pretrained、固定 split.json 和从官方标签统计出的 train_mask_stats.npy；程序先验证其指纹。代码中的中间状态全部写入 work，默认拒绝非空 work 和未声明续训。模型文件目录里的比赛权重、历史锚、缓存统计量都不参与从头训练。
 

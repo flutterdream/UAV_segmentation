@@ -41,7 +41,7 @@ def run(stage: str, command: list[str], log_dir: Path, env: dict[str, str], expe
         "return_code": result.returncode,
         "duration_seconds": time.time() - started,
         "resumed": "--resume" in command,
-        "expected": str(expected) if expected else None,
+        "expected": str(expected) if expected else None
     }
     if expected and expected.is_file():
         record.update({"output_sha256": sha256(expected), "output_bytes": expected.stat().st_size})
@@ -91,7 +91,7 @@ def main() -> None:
         "TORCH_HOME": str(work / "runtime_cache" / "torch"),
         "XDG_CACHE_HOME": str(work / "runtime_cache" / "xdg"),
         "CUDA_CACHE_PATH": str(work / "runtime_cache" / "cuda"),
-        "PYTHONPATH": str(kan) + os.pathsep + str(teacher),
+        "PYTHONPATH": str(kan) + os.pathsep + str(teacher)
     })
     py = sys.executable
     teacher_py = os.environ.get("TEACHER_PYTHON", py)
@@ -162,11 +162,11 @@ def main() -> None:
         "status": "complete_unsubmitted",
         "final_checkpoint": str(final),
         "final_checkpoint_sha256": sha256(final),
-        "submission_zip": str(output / "predictions.zip"),
+        "predictions_zip": str(output / "predictions.zip"),
         "recipe_reference_real_score": 70.65,
         "retraining_real_score": None,
         "submitted": False,
-        "historical_inputs_used": False,
+        "historical_inputs_used": False
     }
     (work / "REPRODUCTION_COMPLETE.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 

@@ -1,0 +1,21 @@
+# ══════════════════════════════════════════════════════════════
+#   无人机航拍语义分割 —— 精确环境锁定
+#
+#  环境经本地(Windows/RTX4050)与 AutoDL(RTX4080S) 双端实测一致。
+#  torch 由基础镜像提供(pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime),
+#  故此处不重复安装 torch, 只锁 Python 侧依赖。
+# ══════════════════════════════════════════════════════════════
+
+# --- 核心依赖(版本经实测固定) ---
+timm==1.0.28
+segmentation-models-pytorch==0.5.0
+numpy==2.5.0
+pillow==12.2.0
+
+# 边界权重图需要 cv2.dilate / cv2.erode。
+# 用 headless 版: 容器无 GUI, 避免拉入 x11 依赖。
+opencv-python-headless==4.10.0.84
+
+# --- torch(仅作参照; 镜像内已自带, 无需在此安装) ---
+# torch==2.6.0+cu124
+# torchvision==0.21.0+cu124

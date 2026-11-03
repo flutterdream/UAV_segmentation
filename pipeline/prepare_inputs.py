@@ -68,7 +68,7 @@ def main() -> None:
         image_dir: 6996,
         mask_dir: 6996,
         test1_dir: 500,
-        test2_dir: 1300,
+        test2_dir: 1300
     }
     counts: dict[str, int] = {}
     for directory, wanted in expected.items():
@@ -152,16 +152,16 @@ def main() -> None:
             "model": "timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k",
             "revision": "a6a1eb2321b4f556fa0fa243fb777d47679f13c9",
             "sha256": public_hash,
-            "source_url": "https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth",
+            "source_url": "https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth"
         },
         "derived": {
             "split_json_sha256": sha256(upstream / "split.json"),
-            "train_mask_stats_sha256": sha256(upstream / "train_mask_stats.npy"),
+            "train_mask_stats_sha256": sha256(upstream / "train_mask_stats.npy")
         },
         "strict_reproduction": (
             "Only official data and the academic public encoder weight are used. "
             "Historical teammate predictions are archived outside the clean training workspace and must not be read."
-        ),
+        )
     }
     save_json(root / "INPUT_MANIFEST.json", manifest)
     print(json.dumps(manifest, ensure_ascii=False, indent=2))

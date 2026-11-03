@@ -69,7 +69,7 @@ def main() -> None:
         "bias": False,
         "n": args.n,
         "val_mIoU": round(float(score), 4),
-        "val_IoU": per_class,
+        "val_IoU": per_class
     }
     temporary = output + ".tmp"
     with open(temporary, "w", encoding="utf-8") as stream:

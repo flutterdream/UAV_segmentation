@@ -1,0 +1,460 @@
+{
+  "clusters": 64,
+  "blend": 0.7,
+  "weight_min": 0.4831055809320669,
+  "weight_max": 3.116183692021885,
+  "weight_mean": 1.0000000000000002,
+  "effective_sample_size": 6089.454067136481,
+  "train_images": 6996,
+  "test_images": 500,
+  "cluster_details": [
+    {
+      "cluster": 0,
+      "train_count": 98,
+      "test_count": 7,
+      "density_ratio": 1.0075053363630104,
+      "weight": 1.0052537354541073
+    },
+    {
+      "cluster": 1,
+      "train_count": 172,
+      "test_count": 8,
+      "density_ratio": 0.6595744680851063,
+      "weight": 0.7617021276595745
+    },
+    {
+      "cluster": 2,
+      "train_count": 72,
+      "test_count": 2,
+      "density_ratio": 0.5053882287924841,
+      "weight": 0.6537717601547389
+    },
+    {
+      "cluster": 3,
+      "train_count": 134,
+      "test_count": 8,
+      "density_ratio": 0.8398897902954232,
+      "weight": 0.8879228532067962
+    },
+    {
+      "cluster": 4,
+      "train_count": 109,
+      "test_count": 10,
+      "density_ratio": 1.2516486251088714,
+      "weight": 1.17615403757621
+    },
+    {
+      "cluster": 5,
+      "train_count": 47,
+      "test_count": 3,
+      "density_ratio": 0.9978177850518276,
+      "weight": 0.9984724495362793
+    },
+    {
+      "cluster": 6,
+      "train_count": 32,
+      "test_count": 0,
+      "density_ratio": 0.3505846271803718,
+      "weight": 0.5454092390262604
+    },
+    {
+      "cluster": 7,
+      "train_count": 94,
+      "test_count": 9,
+      "density_ratio": 1.3102657783508849,
+      "weight": 1.2171860448456193
+    },
+    {
+      "cluster": 8,
+      "train_count": 150,
+      "test_count": 8,
+      "density_ratio": 0.7531914893617021,
+      "weight": 0.8272340425531914
+    },
+    {
+      "cluster": 9,
+      "train_count": 74,
+      "test_count": 5,
+      "density_ratio": 0.9851871801777538,
+      "weight": 0.9896310261244277
+    },
+    {
+      "cluster": 10,
+      "train_count": 21,
+      "test_count": 0,
+      "density_ratio": 0.4989088925259138,
+      "weight": 0.6492362247681396
+    },
+    {
+      "cluster": 11,
+      "train_count": 94,
+      "test_count": 8,
+      "density_ratio": 1.1792392005157961,
+      "weight": 1.1254674403610574
+    },
+    {
+      "cluster": 12,
+      "train_count": 105,
+      "test_count": 1,
+      "density_ratio": 0.23584784010315926,
+      "weight": 0.4650934880722115
+    },
+    {
+      "cluster": 13,
+      "train_count": 83,
+      "test_count": 2,
+      "density_ratio": 0.4422147001934236,
+      "weight": 0.6095502901353965
+    },
+    {
+      "cluster": 14,
+      "train_count": 204,
+      "test_count": 4,
+      "density_ratio": 0.31032610539889377,
+      "weight": 0.5172282737792256
+    },
+    {
+      "cluster": 15,
+      "train_count": 220,
+      "test_count": 13,
+      "density_ratio": 0.8071237194641451,
+      "weight": 0.8649866036249015
+    },
+    {
+      "cluster": 16,
+      "train_count": 210,
+      "test_count": 9,
+      "density_ratio": 0.6033316839848261,
+      "weight": 0.7223321787893783
+    },
+    {
+      "cluster": 17,
+      "train_count": 70,
+      "test_count": 2,
+      "density_ratio": 0.5188652482269503,
+      "weight": 0.6632056737588652
+    },
+    {
+      "cluster": 18,
+      "train_count": 54,
+      "test_count": 5,
+      "density_ratio": 1.3191489361702127,
+      "weight": 1.2234042553191489
+    },
+    {
+      "cluster": 19,
+      "train_count": 105,
+      "test_count": 5,
+      "density_ratio": 0.7075435203094778,
+      "weight": 0.7952804642166345
+    },
+    {
+      "cluster": 20,
+      "train_count": 210,
+      "test_count": 4,
+      "density_ratio": 0.30166584199241303,
+      "weight": 0.5111660893946891
+    },
+    {
+      "cluster": 21,
+      "train_count": 111,
+      "test_count": 2,
+      "density_ratio": 0.33547322083639036,
+      "weight": 0.5348312545854733
+    },
+    {
+      "cluster": 22,
+      "train_count": 250,
+      "test_count": 9,
+      "density_ratio": 0.5086914198303435,
+      "weight": 0.6560839938812404
+    },
+    {
+      "cluster": 23,
+      "train_count": 117,
+      "test_count": 4,
+      "density_ratio": 0.5316242297407279,
+      "weight": 0.6721369608185095
+    },
+    {
+      "cluster": 24,
+      "train_count": 112,
+      "test_count": 7,
+      "density_ratio": 0.8869491422682912,
+      "weight": 0.9208643995878039
+    },
+    {
+      "cluster": 25,
+      "train_count": 115,
+      "test_count": 11,
+      "density_ratio": 1.2971631205673757,
+      "weight": 1.208014184397163
+    },
+    {
+      "cluster": 26,
+      "train_count": 44,
+      "test_count": 8,
+      "density_ratio": 2.3825445071645674,
+      "weight": 1.9677811550151971
+    },
+    {
+      "cluster": 27,
+      "train_count": 96,
+      "test_count": 7,
+      "density_ratio": 1.02745593708307,
+      "weight": 1.019219155958149
+    },
+    {
+      "cluster": 28,
+      "train_count": 86,
+      "test_count": 5,
+      "density_ratio": 0.8552723871872808,
+      "weight": 0.8986906710310966
+    },
+    {
+      "cluster": 29,
+      "train_count": 108,
+      "test_count": 15,
+      "density_ratio": 1.836691144166196,
+      "weight": 1.5856838009163372
+    },
+    {
+      "cluster": 30,
+      "train_count": 28,
+      "test_count": 0,
+      "density_ratio": 0.39307973350526537,
+      "weight": 0.5751558134536858
+    },
+    {
+      "cluster": 31,
+      "train_count": 44,
+      "test_count": 3,
+      "density_ratio": 1.058908669850919,
+      "weight": 1.0412360688956432
+    },
+    {
+      "cluster": 32,
+      "train_count": 121,
+      "test_count": 7,
+      "density_ratio": 0.8235956321062703,
+      "weight": 0.8765169424743893
+    },
+    {
+      "cluster": 33,
+      "train_count": 158,
+      "test_count": 7,
+      "density_ratio": 0.6366444763520863,
+      "weight": 0.7456511334464604
+    },
+    {
+      "cluster": 34,
+      "train_count": 84,
+      "test_count": 14,
+      "density_ratio": 2.1862299784843415,
+      "weight": 1.830360984939039
+    },
+    {
+      "cluster": 35,
+      "train_count": 124,
+      "test_count": 4,
+      "density_ratio": 0.5027764033206884,
+      "weight": 0.6519434823244818
+    },
+    {
+      "cluster": 36,
+      "train_count": 77,
+      "test_count": 5,
+      "density_ratio": 0.9491437467566164,
+      "weight": 0.9644006227296315
+    },
+    {
+      "cluster": 37,
+      "train_count": 226,
+      "test_count": 17,
+      "density_ratio": 1.0107764575849683,
+      "weight": 1.0075435203094778
+    },
+    {
+      "cluster": 38,
+      "train_count": 232,
+      "test_count": 22,
+      "density_ratio": 1.2588502857826855,
+      "weight": 1.1811952000478798
+    },
+    {
+      "cluster": 39,
+      "train_count": 68,
+      "test_count": 5,
+      "density_ratio": 1.066161468959487,
+      "weight": 1.0463130282716409
+    },
+    {
+      "cluster": 40,
+      "train_count": 156,
+      "test_count": 11,
+      "density_ratio": 0.9668296550812739,
+      "weight": 0.9767807585568917
+    },
+    {
+      "cluster": 41,
+      "train_count": 178,
+      "test_count": 17,
+      "density_ratio": 1.2758981513777468,
+      "weight": 1.1931287059644227
+    },
+    {
+      "cluster": 42,
+      "train_count": 108,
+      "test_count": 11,
+      "density_ratio": 1.3775183581246468,
+      "weight": 1.2642628506872526
+    },
+    {
+      "cluster": 43,
+      "train_count": 98,
+      "test_count": 6,
+      "density_ratio": 0.8815671693176341,
+      "weight": 0.9170970185223439
+    },
+    {
+      "cluster": 44,
+      "train_count": 84,
+      "test_count": 3,
+      "density_ratio": 0.5829946609291576,
+      "weight": 0.7080962626504104
+    },
+    {
+      "cluster": 45,
+      "train_count": 131,
+      "test_count": 8,
+      "density_ratio": 0.8584167709637045,
+      "weight": 0.9008917396745931
+    },
+    {
+      "cluster": 46,
+      "train_count": 64,
+      "test_count": 6,
+      "density_ratio": 1.3159625860828452,
+      "weight": 1.2211738102579917
+    },
+    {
+      "cluster": 47,
+      "train_count": 88,
+      "test_count": 5,
+      "density_ratio": 0.8368794326241134,
+      "weight": 0.8858156028368793
+    },
+    {
+      "cluster": 48,
+      "train_count": 88,
+      "test_count": 3,
+      "density_ratio": 0.5579196217494089,
+      "weight": 0.6905437352245862
+    },
+    {
+      "cluster": 49,
+      "train_count": 121,
+      "test_count": 14,
+      "density_ratio": 1.544241810199257,
+      "weight": 1.3809692671394798
+    },
+    {
+      "cluster": 50,
+      "train_count": 38,
+      "test_count": 8,
+      "density_ratio": 2.7149925779317168,
+      "weight": 2.2004948045522017
+    },
+    {
+      "cluster": 51,
+      "train_count": 105,
+      "test_count": 12,
+      "density_ratio": 1.533010960670535,
+      "weight": 1.3731076724693745
+    },
+    {
+      "cluster": 52,
+      "train_count": 111,
+      "test_count": 7,
+      "density_ratio": 0.8945952555637076,
+      "weight": 0.9262166788945954
+    },
+    {
+      "cluster": 53,
+      "train_count": 104,
+      "test_count": 4,
+      "density_ratio": 0.5950289543887045,
+      "weight": 0.7165202680720932
+    },
+    {
+      "cluster": 54,
+      "train_count": 176,
+      "test_count": 10,
+      "density_ratio": 0.7883311782453666,
+      "weight": 0.8518318247717567
+    },
+    {
+      "cluster": 55,
+      "train_count": 52,
+      "test_count": 3,
+      "density_ratio": 0.9102899091700883,
+      "weight": 0.9372029364190618
+    },
+    {
+      "cluster": 56,
+      "train_count": 62,
+      "test_count": 1,
+      "density_ratio": 0.387212871811157,
+      "weight": 0.5710490102678099
+    },
+    {
+      "cluster": 57,
+      "train_count": 59,
+      "test_count": 9,
+      "density_ratio": 2.026817375886525,
+      "weight": 1.7187721631205672
+    },
+    {
+      "cluster": 58,
+      "train_count": 112,
+      "test_count": 20,
+      "density_ratio": 2.3282414984542643,
+      "weight": 1.929769048917985
+    },
+    {
+      "cluster": 59,
+      "train_count": 165,
+      "test_count": 10,
+      "density_ratio": 0.8393408427200668,
+      "weight": 0.8875385899040468
+    },
+    {
+      "cluster": 60,
+      "train_count": 54,
+      "test_count": 6,
+      "density_ratio": 1.5390070921985817,
+      "weight": 1.3773049645390072
+    },
+    {
+      "cluster": 61,
+      "train_count": 139,
+      "test_count": 18,
+      "density_ratio": 1.7115346729708434,
+      "weight": 1.4980742710795902
+    },
+    {
+      "cluster": 62,
+      "train_count": 42,
+      "test_count": 41,
+      "density_ratio": 11.59167043911272,
+      "weight": 3.0
+    },
+    {
+      "cluster": 63,
+      "train_count": 102,
+      "test_count": 2,
+      "density_ratio": 0.36369059455160074,
+      "weight": 0.5545834161861205
+    }
+  ]
+}

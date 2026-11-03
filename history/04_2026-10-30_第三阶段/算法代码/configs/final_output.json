@@ -1,0 +1,69 @@
+{
+  "highest_reported_real_score": 70.65,
+  "final_model_count": 1,
+  "final_state": "ema",
+  "stage47": {
+    "execution_iters": 1400,
+    "selected_iter": 600,
+    "scheduler_horizon": 4000,
+    "crop": 1024,
+    "true_batch": 8,
+    "seed": 17
+  },
+  "calibration": {
+    "statistics_pool": "official_test2",
+    "images": 1300,
+    "routes": 1,
+    "bn_layers": 41,
+    "changed_buffers": 82,
+    "alpha_mean": 0.75,
+    "alpha_var": 0.75,
+    "between_group_variance_term": true,
+    "gradient_updates": false
+  },
+  "inference": {
+    "aggregation": "probability_average",
+    "passes": [
+      [
+        1,
+        false
+      ],
+      [
+        1,
+        true
+      ],
+      [
+        0.75,
+        false
+      ],
+      [
+        0.75,
+        true
+      ],
+      [
+        1.25,
+        false
+      ],
+      [
+        1.25,
+        true
+      ],
+      [
+        1.5,
+        false
+      ],
+      [
+        0.5,
+        false
+      ]
+    ]
+  },
+  "historical_restarts": {
+    "teacher_all_enhanced_after_epoch": 32,
+    "teacher_c1_after_epoch": 1,
+    "swin_v41_after_iter": 3400
+  },
+  "model_sha256": "60c499b9d860f2dd71ef964f047d4dbeed47a3b724f75f8a0b59a78bcf46952d",
+  "result_zip_sha256": "f8a021e61995af2d4289f526f48533241432753da3bacbf30f8ae29555db05e8",
+  "retrained_score": null
+}

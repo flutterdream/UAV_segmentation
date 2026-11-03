@@ -136,7 +136,7 @@ def main():
                     "filename": row["filename"],
                     "fold": int(fold),
                     "pseudo_group": int(group),
-                    "dominant_class": row["dominant_class"],
+                    "dominant_class": row["dominant_class"]
                 }
             )
     report = {
@@ -147,7 +147,7 @@ def main():
         "fold_class_share_sums": fold_classes.round(4).tolist(),
         "group_leakage": bool(
             any(len(set(folds[groups == group])) > 1 for group in np.unique(groups))
-        ),
+        )
     }
     with open(output_dir / "report.json", "w", encoding="utf-8") as stream:
         json.dump(report, stream, ensure_ascii=False, indent=2)

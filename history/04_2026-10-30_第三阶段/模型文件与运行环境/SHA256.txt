@@ -1,0 +1,5 @@
+# 第三阶段最终权重与父权重指纹
+
+873bb246c889012c9e873ce9c2df4a946a30e8cd116de383f8eb0967ced832b9  sw_s12800.pth                                  391,818,938 B   ★ 最终权重860f2dd71ef964f047d4dbeed47a3b724f75f8a0b59a78bcf46952d  ckpt_kan_s2_i600_c1_alpha075_20261003.pth    783,673,997 B     父权重 R0整指纹见 DECODER_CHAIN_SHA256.txt
+
+# 校验：sha256sum -c 本文件（去掉中文注释后）

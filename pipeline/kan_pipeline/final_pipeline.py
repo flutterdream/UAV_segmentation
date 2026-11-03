@@ -16,8 +16,8 @@ CLASS_NAMES = ["Background", "Building", "Road", "Water", "Barren",
                "Vegetation", "Agricultural", "Vehicle"]
 
 # ---- 扩展阶段扩展：测试集可通过环境变量切换（默认保持 test_2 / 1300，向后兼容）----
-TEST_SPLIT = os.environ.get("AIC_TEST_SPLIT", "test_2")
-TEST_COUNT = int(os.environ.get("AIC_TEST_COUNT", "1300"))
+TEST_SPLIT = os.environ.get("_TEST_SPLIT", "test_2")
+TEST_COUNT = int(os.environ.get("_TEST_COUNT", "1300"))
 
 
 def sha256(path):
@@ -39,10 +39,10 @@ def setup(root):
     import kan_swin as K
     # 推理模式下只用到测试图与最终权重，训练集/公开权重/派生统计不在本机，
     # 因此允许跳过 verify_inputs（权重正确性仍由 load_model 的 SHA 校验兜住）。
-    if os.environ.get("AIC_SKIP_VERIFY", "0") != "1":
+    if os.environ.get("_SKIP_VERIFY", "0") != "1":
         P.verify_inputs()
     else:
-        print("[verify] 已跳过 verify_inputs（AIC_SKIP_VERIFY=1，推理模式）", flush=True)
+        print("[verify] 已跳过 verify_inputs（_SKIP_VERIFY=1，推理模式）", flush=True)
     torch.set_num_threads(8)
     return P,S,K
 

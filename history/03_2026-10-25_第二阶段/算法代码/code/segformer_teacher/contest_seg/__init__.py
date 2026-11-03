@@ -1,0 +1,2 @@
+"""Competition semantic segmentation baseline."""
+

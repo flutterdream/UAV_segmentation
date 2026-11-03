@@ -5,7 +5,7 @@
   1. zip 可读、无损坏条目
   2. PNG 数量与命名（平铺，无子目录）
   3. 尺寸 1024×1024、单通道 8 位
-  4. 像素值域 1~8（0 为忽略类，不应出现在提交结果中）
+  4. 像素值域 1~8（0 为忽略类，不应出现在输出结果中）
 
 用法：
     python tools/verify_predictions.py outputs/predictions.zip
@@ -48,7 +48,7 @@ def from_zip(path):
     print(f"PNG 数量: {len(names)}")
     nested = [n for n in names if "/" in n]
     if nested:
-        print(f"[WARN] 存在子目录: {nested[:3]}（提交通常要求平铺）")
+        print(f"[WARN] 存在子目录: {nested[:3]}（输出通常要求平铺）")
     problems = []
     step = max(1, len(names) // 200)
     for i, n in enumerate(names):

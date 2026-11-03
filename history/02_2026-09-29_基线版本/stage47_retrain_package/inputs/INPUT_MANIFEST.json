@@ -1,0 +1,22 @@
+{
+  "policy": "No competition-trained checkpoint is present in the clean upstream workspace.",
+  "official_file_counts": {
+    "E:\\复现\\train\\images": 6996,
+    "E:\\复现\\train\\masks": 6996,
+    "E:\\复现\\test_1\\images": 500,
+    "E:\\复现\\test_2\\images": 1300
+  },
+  "split_seed": 123,
+  "train_seed": 42,
+  "public_pretrained": {
+    "model": "timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k",
+    "revision": "a6a1eb2321b4f556fa0fa243fb777d47679f13c9",
+    "sha256": "c5d8c5ec47726ea2f4fd2b60954972ffe9d765f2c166812ffc2b1d61eef02cb8",
+    "source_url": "https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth"
+  },
+  "derived": {
+    "split_json_sha256": "6b22db7163897f4636b900bfe189dd9dff011c45451985c34c466855b83ad0e8",
+    "train_mask_stats_sha256": "f58329570799e54f0853f669708f9d7edfa1e5f994707d910eebb841408c9a3f"
+  },
+  "strict_reproduction": "Only official data and the academic public encoder weight are used. Historical teammate predictions are archived outside the clean training workspace and must not be read."
+}

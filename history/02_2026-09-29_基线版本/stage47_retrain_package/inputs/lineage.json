@@ -1,0 +1,9 @@
+{
+  "parent": "ckpt_kan_segformer_distill_rebuilt_i2000.pth",
+  "parent_sha256": "b92138265b2538ae33e47ba65058b8b1713aa4efbf41745ee98d36928674a24b",
+  "parent_iter": 2000,
+  "parent_stage": "kan_segformer_distill_rebuilt",
+  "parent_ema": true,
+  "anchor_manifest_sha256": "a24ad3d0c8e775c5bc79943a484971e1fa242707d3ceb3e5b08ed5892975f07c",
+  "input_manifest_sha256": "4eaa8e7fda8c173e489014d8d95480f712595c8928875268dd7ca1a0516a9dbe"
+}

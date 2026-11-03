@@ -444,7 +444,7 @@ def infer(a):
     model, iters = load_trained(crop=a.crop, barren=a.barren); model.eval()
     bias = load_bias(a.crop, a.barren)
     tag = "swin" + ("" if a.crop == 512 else f"_{a.crop}") + ("_barren" if a.barren else "")
-    out_dir = os.path.join(ARTIFACT_ROOT, f"submission_test1_{tag}" + ("_cal" if bias is not None else ""))
+    out_dir = os.path.join(ARTIFACT_ROOT, f"predictions_test1_{tag}" + ("_cal" if bias is not None else ""))
     os.makedirs(out_dir, exist_ok=True)
     files = sorted(os.listdir(TEST_DIR))
     for n, fn in enumerate(files):

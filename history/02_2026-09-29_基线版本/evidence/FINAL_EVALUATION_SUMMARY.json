@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "iteration": 600,
+      "route": "plain_ema",
+      "validation_count": 500,
+      "miou": 0.7582186554097388,
+      "class_iou": {
+        "Background": 0.6503156809679425,
+        "Building": 0.8514242923868873,
+        "Road": 0.7740692295786618,
+        "Water": 0.8899541140624352,
+        "Barren": 0.5092586450127369,
+        "Vegetation": 0.8761264975238174,
+        "Agricultural": 0.764647896436949,
+        "Vehicle": 0.7499528873084802
+      },
+      "duration_seconds": 132.06504840000002,
+      "checkpoint_sha256": "4c3e9ae1e230f82f23cdbdcebed593ed1dadd8ba3dd513b22acdfc2ef3bd4da5",
+      "finite_nonzero_all_classes": true,
+      "result_prediction": false
+    },
+    {
+      "iteration": 800,
+      "route": "plain_ema",
+      "validation_count": 500,
+      "miou": 0.7546204436551391,
+      "class_iou": {
+        "Background": 0.6487000133977336,
+        "Building": 0.8491614332816438,
+        "Road": 0.7729231841728043,
+        "Water": 0.8874618664359577,
+        "Barren": 0.4981530090039705,
+        "Vegetation": 0.8755859832654421,
+        "Agricultural": 0.7640905115119293,
+        "Vehicle": 0.7408875481716319
+      },
+      "duration_seconds": 126.41421290000017,
+      "checkpoint_sha256": "e67130e270114c70400c8f7ed5a0816863794a0d95d731210567c6d921dce3cd",
+      "finite_nonzero_all_classes": true,
+      "result_prediction": false
+    },
+    {
+      "iteration": 1000,
+      "route": "plain_ema",
+      "validation_count": 500,
+      "miou": 0.7502006333555866,
+      "class_iou": {
+        "Background": 0.646740082103848,
+        "Building": 0.84456302143402,
+        "Road": 0.7725680294325228,
+        "Water": 0.883412284146844,
+        "Barren": 0.4854937786348448,
+        "Vegetation": 0.8734025438200211,
+        "Agricultural": 0.7629932908089094,
+        "Vehicle": 0.7324320364636823
+      },
+      "duration_seconds": 134.16193040000007,
+      "checkpoint_sha256": "b231dd1a3b3001f9ee2054de9d8f10999535c4498c74f462ed760f97c411ec81",
+      "finite_nonzero_all_classes": true,
+      "result_prediction": false
+    },
+    {
+      "iteration": 1200,
+      "route": "plain_ema",
+      "validation_count": 500,
+      "miou": 0.7454333335630605,
+      "class_iou": {
+        "Background": 0.6439493160922501,
+        "Building": 0.8353486676421658,
+        "Road": 0.7724102216537433,
+        "Water": 0.877737206158437,
+        "Barren": 0.4774411438343958,
+        "Vegetation": 0.8671039292201256,
+        "Agricultural": 0.7612437275490609,
+        "Vehicle": 0.7282324563543053
+      },
+      "duration_seconds": 133.91980979999994,
+      "checkpoint_sha256": "734cdf6662104500cf7bcd1b95c25df4b3359b0547f16c0337460d08984053ce",
+      "finite_nonzero_all_classes": true,
+      "result_prediction": false
+    },
+    {
+      "iteration": 1400,
+      "route": "plain_ema",
+      "validation_count": 500,
+      "miou": 0.7420629926463984,
+      "class_iou": {
+        "Background": 0.6402934691843696,
+        "Building": 0.8258774362899854,
+        "Road": 0.7715290004559068,
+        "Water": 0.8730695784326598,
+        "Barren": 0.4748680934575468,
+        "Vegetation": 0.8597021549880208,
+        "Agricultural": 0.7595357090452742,
+        "Vehicle": 0.7316284993174232
+      },
+      "duration_seconds": 134.35439929999984,
+      "checkpoint_sha256": "5f34456d61c92abde923f42c3f82e49df0285de8a679249928ddbde0a0120245",
+      "finite_nonzero_all_classes": true,
+      "result_prediction": false
+    }
+  ],
+  "selection_gate": {
+    "best_iteration": 600,
+    "best_miou": 0.7582186554097388,
+    "required_miou": 0.7526,
+    "minimum_class_delta_vs_proven_i1000": 0.0004478964369489802,
+    "required_minimum_class_delta": -0.01,
+    "passes": true,
+    "next_step_if_pass": "only the single winner may receive test2 BN0.25 and MS2 probability inference",
+    "submitted": false,
+    "real_result_score": null
+  },
+  "i1000_reproduction_control": {
+    "proven_path": "E:\\复现\\runs\\strict\\stage47_remote_20260926\\artifacts\\autodl_47_segformer_rebuilt\\runs\\ckpt_kan_stage47_segformer_rebuilt_i1000.pth",
+    "proven_sha256": "2508d7ed8c0af494505ce3ae11de4e396f42f365c1702db8e473acefcfe01f81",
+    "new_i1000_sha256": "b231dd1a3b3001f9ee2054de9d8f10999535c4498c74f462ed760f97c411ec81",
+    "tensor_count": 709,
+    "exact_tensor_count": 62,
+    "floating_tensor_count": 665,
+    "max_abs_difference": 63.256317138671875,
+    "mean_abs_difference": 0.0001150673131799994,
+    "role": "reproduction control only; the  checkpoint is immutable"
+  }
+}

@@ -1,0 +1,17 @@
+# 交付包完整性清单 (md5)
+# 生成时间: 2026-09-22 20:43:45
+# 校验: md5sum -c md5.txt
+
+## weights/
+42478ccbbb29feaf0088b704eef3bfd5 *weights/ckpt_kan_swin_16k.pth
+4473dcd2a1f7026efc54b85c1e694bb4 *weights/ckpt_kandist_i2000.pth
+fca50c3ebbc5fd6dffcb22d4f8c43b99 *weights/ckpt_kanpl_i2000.pth
+
+## code/
+783b66215f61dc1f8f23508c33c9a7ba *code/distill_agree.py
+3875f6d28a46f780a08418732389503b *code/kan_swin.py
+1a9a7a1a787a4e9379ef3ada8d125959 *code/pl_gen.py
+cc443fa34454bf4dbe8e14215c91b46d *code/seg_swin.py
+
+## data/
+82cb7e673eb2cabd32445612e664577f *data/split.json

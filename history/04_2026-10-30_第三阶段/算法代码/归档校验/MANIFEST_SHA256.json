@@ -1,0 +1,333 @@
+{
+  "format": "sha256-v1",
+  "excluded": [
+    "算法代码/归档校验/MANIFEST_SHA256.json"
+  ],
+  "files": [
+    {
+      "path": "技术文档.pdf",
+      "bytes": 9735036,
+      "sha256": "77ced4567d82233f9e9b424e9594516e7692c72b1e212d9ba7460a0a67219e21"
+    },
+    {
+      "path": "模型文件与运行环境/ckpt_kan_s2_i600_c1_alpha075_20261003.pth",
+      "bytes": 783673997,
+      "sha256": "60c499b9d860f2dd71ef964f047d4dbeed47a3b724f75f8a0b59a78bcf46952d"
+    },
+    {
+      "path": "模型文件与运行环境/docker/Dockerfile",
+      "bytes": 3738,
+      "sha256": "fe0e9e79a1ce911e762b42fa0bcaeb451af850f273296c89a603d35f8750e01f"
+    },
+    {
+      "path": "模型文件与运行环境/docker/Dockerfile.dockerignore",
+      "bytes": 319,
+      "sha256": "dfe6b57f85d0580c4f519d9e88adb05bf798946e5b81f2b9bde71ee4a68217f4"
+    },
+    {
+      "path": "模型文件与运行环境/environment/requirements.kan.lock.txt",
+      "bytes": 245,
+      "sha256": "0ca83751a7dde2df3fc4b7c9b6ee96ca6bdccfe2c360fbc738868b79d7b7d26f"
+    },
+    {
+      "path": "模型文件与运行环境/environment/requirements.teacher.txt",
+      "bytes": 289,
+      "sha256": "0c5d875de9b9994fe7ac8f6887e2b4398024c770430c255c337fdf0d15e97297"
+    },
+    {
+      "path": "模型文件与运行环境/MODEL_CARD.md",
+      "bytes": 769,
+      "sha256": "896b1c552fb4e3a11f1b0a046a66ac95b58e3a9c9d768518c129b75b5121b8e8"
+    },
+    {
+      "path": "模型文件与运行环境/README_运行环境.md",
+      "bytes": 777,
+      "sha256": "0a388f03d47479660dd66c9ffdcd53eaacb109cf76f4743127a141037005ea71"
+    },
+    {
+      "path": "模型文件与运行环境/SHA256.txt",
+      "bytes": 108,
+      "sha256": "0f7be4121bc3f4e07668c30aec689860f42b0ad30e19996fe96ce379114a7626"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/final_pipeline.py",
+      "bytes": 11560,
+      "sha256": "af484bbf20d0d533f8f86efb6b49bb06883dc2830acc7774fab276aaaac74a91"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/kan_swin.py",
+      "bytes": 38289,
+      "sha256": "c84d5c884a17fff40257b137b08ed08bc1729243a9884439b315b8132ccdb9af"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/pl_gen.py",
+      "bytes": 4227,
+      "sha256": "be95121991a4332b306e3d4ea08c99c0d4b5181c566ee1f2d9c712de6eab7e18"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/seg_swin.py",
+      "bytes": 25543,
+      "sha256": "189d8da283f09b04d07a43d588dac96760df121d052a9839ed4bf15e0c7ce8c0"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/split.json",
+      "bytes": 5463,
+      "sha256": "6b22db7163897f4636b900bfe189dd9dff011c45451985c34c466855b83ad0e8"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/stage47_i600.py",
+      "bytes": 14875,
+      "sha256": "ece6a14d7b1b506a1c776276bc34b851522c065dd4a9e8957efc806b83837480"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/strict_env.py",
+      "bytes": 5798,
+      "sha256": "1e47d3c89218ca4bcea94b384e15919728663294d85683f1578cb2c30abd04f0"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/strict_eval.py",
+      "bytes": 3126,
+      "sha256": "7f7da8b9534f54f824413a53ecd459b4acbdd90bce219ef271f93992940fbd54"
+    },
+    {
+      "path": "算法代码/code/kan_pipeline/train_mask_stats.npy",
+      "bytes": 251984,
+      "sha256": "f58329570799e54f0853f669708f9d7edfa1e5f994707d910eebb841408c9a3f"
+    },
+    {
+      "path": "算法代码/code/prepare_inputs.py",
+      "bytes": 7575,
+      "sha256": "0722cf2805811d50fe5eafbb7b959819d8629ecdf38830d469b1cd43ec17bbb7"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/__init__.py",
+      "bytes": 51,
+      "sha256": "33fd0f71df47c2b9af53e0038ff7ba3d39250a61c6fff1af7cdbeff9c4a3fa3e"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/data.py",
+      "bytes": 12150,
+      "sha256": "40d6da9949416c95313db12438908a5d9e7b0f5dcb9c7ce92991c222342351c1"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/inference.py",
+      "bytes": 272,
+      "sha256": "f1ca3bfcd73814060680a4bda9e6f98670760e2a04ac9860f26e654814b57870"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/labels.py",
+      "bytes": 590,
+      "sha256": "b56b1ab1a273b63db99dbbcd9822bde55d544b378d07a8f8d74692ecaa5650f3"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/losses.py",
+      "bytes": 7385,
+      "sha256": "d9fabac36954327279045092c9e15160c252e9d3dcb460d48496b5028cb514b5"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/metrics.py",
+      "bytes": 1505,
+      "sha256": "83652914a1bdd5fcb7bce5b63999dd8957a07ef204436015ed5ec5c9f93c670d"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/contest_seg/model.py",
+      "bytes": 20333,
+      "sha256": "27143fb41168fd2a3145a51bff84c1be5c29905877452a3f2d6680cedf91d4ed"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/infer.py",
+      "bytes": 8065,
+      "sha256": "97b2664fa07780ce3ab81afad1e4716939e3298ff185b8bc757f40661a684540"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/requirements.txt",
+      "bytes": 159,
+      "sha256": "d405a041d6938cc406d08d665e2c1ab6f07fa43ad629535ebe8cc04a09d2ca40"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/audit_data.py",
+      "bytes": 4115,
+      "sha256": "e8145597b4fb827b789f3c96ad9d9b5e5404fa3d6781b4ca8408ad5e6ec02521"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/build_target_domain_weights.py",
+      "bytes": 4714,
+      "sha256": "5742c47839c1b8da6b4224fb0cd04150b65a790111a080ad9e4e433046ab7e72"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/extract_domain_features.py",
+      "bytes": 3638,
+      "sha256": "cf221dbe52df3f7482dda5040368bfc80364caa3e6931de89ac4e8ba60f334e9"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/infer_probability_average.py",
+      "bytes": 5405,
+      "sha256": "da74ae883ee7385f9a23af4669157cfff2964bd91dfae7f62685edca2f21fbe4"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/make_splits.py",
+      "bytes": 6245,
+      "sha256": "83b57a62cfb94dc30be0d2aefd30892c6c25885ad6cb4adedabf7cf83a8fdb0c"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/run_portable_teacher_chain.py",
+      "bytes": 11395,
+      "sha256": "313019a118ce3bbd4447093ceda34db4cddfe773a0cec25e414f556dde71fa98"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/scripts/validate_anchor_predictions.py",
+      "bytes": 2447,
+      "sha256": "c2c454b657f60bbb9c7cf74b16f5d283d438c10f861e5aff3e601afe71c3b125"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/train.py",
+      "bytes": 27758,
+      "sha256": "d427a05958b516a2b50878882615bf110b25d5d909dc16b789ac1bb3a36beb0d"
+    },
+    {
+      "path": "算法代码/code/segformer_teacher/train_uda.py",
+      "bytes": 23923,
+      "sha256": "b6801c3a13a8d909af0dee3c436fe464fd7791e209135e6f7baac62f66602f01"
+    },
+    {
+      "path": "算法代码/configs/final_output.json",
+      "bytes": 1334,
+      "sha256": "f04333b96b6e6c6735a33b2e77bc1eed931742f263c48bc1d82f0b4e9d28891f"
+    },
+    {
+      "path": "算法代码/configs/stage47_formal.json",
+      "bytes": 426,
+      "sha256": "f6736e4e06701880530b8ca5e6f4a2866c307dfbac6f41b99e5ca0d02d26b72d"
+    },
+    {
+      "path": "算法代码/configs/teacher/domain_weight_report.json",
+      "bytes": 10978,
+      "sha256": "afeeebd5eaafe150e376148af1ed60de6f838705f829f74fe0170b3fd5777623"
+    },
+    {
+      "path": "算法代码/configs/teacher/folds.csv",
+      "bytes": 118402,
+      "sha256": "6cb6431e39473135e2704b2a455f9f721322dd6809e3455bec2c178ebce7dba5"
+    },
+    {
+      "path": "算法代码/configs/teacher/report.json",
+      "bytes": 927,
+      "sha256": "4a29feaba92e7451dc93993f8d74dc1ed61908df56f52f33843de03654fa5aca"
+    },
+    {
+      "path": "算法代码/configs/teacher/train_weights.csv",
+      "bytes": 243959,
+      "sha256": "20666f5bceb8fc6163bc7f1b196f83d2710d55318b2fae2d730cf46ac972937f"
+    },
+    {
+      "path": "算法代码/DOCKER_RUN.md",
+      "bytes": 5107,
+      "sha256": "ba4e8c8416c25587681a9a7693e719dee96a2df2c3da726fb55e17a2e543a256"
+    },
+    {
+      "path": "算法代码/INPUT_MANIFEST.json",
+      "bytes": 1124,
+      "sha256": "4eaa8e7fda8c173e489014d8d95480f712595c8928875268dd7ca1a0516a9dbe"
+    },
+    {
+      "path": "算法代码/public_pretrained/huggingface/hub/models--timm--swin_base_patch4_window7_224.ms_in22k_ft_in1k/refs/main",
+      "bytes": 40,
+      "sha256": "2dee922ee220da7ee64f6470f8b82ef5e78cf912f48eacb7f1428ba88820e03d"
+    },
+    {
+      "path": "算法代码/public_pretrained/huggingface/hub/models--timm--swin_base_patch4_window7_224.ms_in22k_ft_in1k/snapshots/a6a1eb2321b4f556fa0fa243fb777d47679f13c9/model.safetensors",
+      "bytes": 352685652,
+      "sha256": "c5d8c5ec47726ea2f4fd2b60954972ffe9d765f2c166812ffc2b1d61eef02cb8"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/dinov2_small_ed25f3a/config.json",
+      "bytes": 547,
+      "sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/dinov2_small_ed25f3a/model.safetensors",
+      "bytes": 88249960,
+      "sha256": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/dinov2_small_ed25f3a/preprocessor_config.json",
+      "bytes": 436,
+      "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/dinov2_small_ed25f3a/README.md",
+      "bytes": 3033,
+      "sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/segformer_b2_ade_de01bae/config.json",
+      "bytes": 6885,
+      "sha256": "ee7400840fdb1e5045f0b2eba78bf053df8e33a309c4acec31705a48c8cc5c00"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/segformer_b2_ade_de01bae/preprocessor_config.json",
+      "bytes": 271,
+      "sha256": "8039d1d210abaa7117ad78e58cdfd6141a2ec72c03dae891b3cd76737e422c6c"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/segformer_b2_ade_de01bae/pytorch_model.bin",
+      "bytes": 110000905,
+      "sha256": "187ca07bea003a5717c63d04ea90b07f33cd033c0ebf44b4b89fce5070d6c8f3"
+    },
+    {
+      "path": "算法代码/public_pretrained/segformer_teacher_historical/segformer_b2_ade_de01bae/README.md",
+      "bytes": 3090,
+      "sha256": "7b532a0053fc1769553386090fbc928ed8d0f5b5d5b20cfa8f51e46f56ef3c6d"
+    },
+    {
+      "path": "算法代码/README_FIRST.md",
+      "bytes": 1949,
+      "sha256": "84fb620dde8ccecce73a2c1365e56b81e4f3e703a5fdd6813fc4928d6061af63"
+    },
+    {
+      "path": "算法代码/REPRODUCE_FROM_SCRATCH.md",
+      "bytes": 5454,
+      "sha256": "afa2172bec87277671013cc381f41bdb23345a8fe486065301364687e6ffeb9f"
+    },
+    {
+      "path": "算法代码/scripts/entrypoint.py",
+      "bytes": 871,
+      "sha256": "50a360bb0d2af82100acd268d5cbfa7914dd257c37614c1a62483c81eb57bf34"
+    },
+    {
+      "path": "算法代码/scripts/reproduce_all_from_public_weights.ps1",
+      "bytes": 218,
+      "sha256": "8bd34457792e772599d9d070a1db36644e42aa80a0a976dc38820b9fdbbc482b"
+    },
+    {
+      "path": "算法代码/scripts/reproduce_all_from_public_weights.py",
+      "bytes": 11957,
+      "sha256": "0ecc63162b06d19dd18a092f25a37289439bc63caed91790fa94dbd880606da0"
+    },
+    {
+      "path": "算法代码/scripts/reproduce_all_from_public_weights.sh",
+      "bytes": 170,
+      "sha256": "b6efec41d1bf27230ebccd1c09f5fd06caae99aa248efb62c98acebbc5ad2d0d"
+    },
+    {
+      "path": "算法代码/归档校验/VERIFY_SUBMISSION.py",
+      "bytes": 3102,
+      "sha256": "933ba30ad0cfa6b699f52fadb59306546a16f88c9046800a4cc0866797a03475"
+    },
+    {
+      "path": "评测结果文档/S2_stage47_i600_c1_alpha075_eight_probability.zip",
+      "bytes": 12412750,
+      "sha256": "f8a021e61995af2d4289f526f48533241432753da3bacbf30f8ae29555db05e8"
+    },
+    {
+      "path": "算法代码/DATA_SETUP.md",
+      "bytes": 1281,
+      "sha256": "4ac31b42dc9836a52c43f9b7a726769f78a03892af9724d60c012e5f09a07baa"
+    },
+    {
+      "path": "算法代码/configs/TEST2_FILENAMES.json",
+      "bytes": 26198,
+      "sha256": "b6d4a6800730d033a545a003f980e9f31eadb19527feedf957cc3e4aa27264fc"
+    }
+  ]
+}

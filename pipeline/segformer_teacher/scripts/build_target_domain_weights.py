@@ -78,7 +78,7 @@ def main():
                     "filename": name,
                     "weight": f"{weight:.8f}",
                     "cluster": int(cluster),
-                    "density_ratio": f"{density_ratio[cluster]:.8f}",
+                    "density_ratio": f"{density_ratio[cluster]:.8f}"
                 }
             )
     effective_size = float(weights.sum() ** 2 / np.square(weights).sum())
@@ -97,10 +97,10 @@ def main():
                 "train_count": int(train_counts[cluster]),
                 "test_count": int(test_counts[cluster]),
                 "density_ratio": float(density_ratio[cluster]),
-                "weight": float(cluster_weights[cluster]),
+                "weight": float(cluster_weights[cluster])
             }
             for cluster in range(args.clusters)
-        ],
+        ]
     }
     with open(output.parent / "domain_weight_report.json", "w", encoding="utf-8") as stream:
         json.dump(report, stream, ensure_ascii=False, indent=2)

@@ -43,6 +43,7 @@ UAV_image_segmentation/
 │   ├── infer_p0.py                 8 路概率平均推理
 │   ├── drive_sweep.py              快照扫描
 │   └── prepare_inputs.py           输入整理
+├── history/                        四个阶段的历史版本快照（按时间排序，见其 README）
 ├── scripts/                        工程脚本（校验 / 归档 / 体积）
 ├── configs/                        训练与教师配置
 │   └── decoder_finetune.yaml       四段微调超参与复现命令

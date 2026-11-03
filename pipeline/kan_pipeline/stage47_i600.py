@@ -48,7 +48,7 @@ FORMAL = {
     "scale_max": 1.5,
     "final_inference": "ms2",
     "true_batch_required": True,
-    "gradient_accumulation": 1,
+    "gradient_accumulation": 1
 }
 
 RUN_STAGE = "kan_stage47_earlystop_bracket"

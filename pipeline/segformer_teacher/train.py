@@ -367,7 +367,7 @@ def main():
             json.dumps(
                 {
                     "backbone_trainable_last_blocks": initial_blocks,
-                    "freeze_backbone_epochs": args.freeze_backbone_epochs,
+                    "freeze_backbone_epochs": args.freeze_backbone_epochs
                 }
             ),
             flush=True,
@@ -514,7 +514,7 @@ def main():
                                 parameter.numel()
                                 for parameter in model.parameters()
                                 if parameter.requires_grad
-                            ),
+                            )
                         }
                     ),
                     flush=True,
@@ -550,7 +550,7 @@ def main():
                     "steps_total": len(train_loader),
                     "train_loss_running": running_loss / step,
                     "seconds_per_step": elapsed / step,
-                    "learning_rate": optimizer.param_groups[0]["lr"],
+                    "learning_rate": optimizer.param_groups[0]["lr"]
                 }
                 if device.type == "cuda":
                     payload["cuda_memory_gb"] = (
@@ -595,7 +595,7 @@ def main():
             {
                 "epoch": epoch,
                 "train_loss": running_loss / max(step, 1),
-                "learning_rate": optimizer.param_groups[0]["lr"],
+                "learning_rate": optimizer.param_groups[0]["lr"]
             }
         )
         history.append(result)
@@ -624,7 +624,7 @@ def main():
             "scheduler": scheduler.state_dict(),
             "scaler": scaler.state_dict(),
             "best_miou": best_miou,
-            "epochs_without_improvement": epochs_without_improvement,
+            "epochs_without_improvement": epochs_without_improvement
         }
         if ema is not None:
             checkpoint["model_ema"] = ema.module.state_dict()
@@ -646,7 +646,7 @@ def main():
                 "epoch": epoch,
                 "metrics": result,
                 "args": vars(args),
-                "ema_decay": args.ema_decay,
+                "ema_decay": args.ema_decay
             }
             torch.save(epoch_checkpoint, output_dir / f"epoch_{epoch:02d}.pt")
         if epoch == args.epochs or should_early_stop:
@@ -658,7 +658,7 @@ def main():
                 "epoch": epoch,
                 "metrics": result,
                 "args": vars(args),
-                "ema_decay": args.ema_decay,
+                "ema_decay": args.ema_decay
             }
             torch.save(final_checkpoint, output_dir / "final.pt")
         if should_early_stop:
@@ -668,7 +668,7 @@ def main():
                         "early_stopped": True,
                         "epoch": epoch,
                         "best_miou": best_miou,
-                        "epochs_without_improvement": epochs_without_improvement,
+                        "epochs_without_improvement": epochs_without_improvement
                     },
                     ensure_ascii=False,
                 ),

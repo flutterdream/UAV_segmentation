@@ -1,0 +1,16 @@
+# 解码器微调链权重指纹
+
+前序链终点（已在包内，同名文件）：
+60c499b9d860f2dd71ef964f047d4dbeed47a3b724f75f8a0b59a78bcf46952d  ckpt_kan_s2_i600_c1_alpha075_20261003.pth   783673997 B
+
+本阶段四段微调（父链见 REPRODUCE_DECODER_CHAIN.md）：
+d33b1959fcc805386e570a8046891c7cc4e8c866dec19b6bc41026a0c2d5b4d0  v2.pth            391772347 B   val500 0.758314
+180ab1636e2c16b153a78951d669f0d7e57301cfac5654f2e02bc36ac96219bf  r2.pth            391772411 B   val500 0.761884
+617141ee4210dc128066f968ce4f148e04239c8a6396e898939f8af8b972b626  r3.pth            391772411 B   val500 0.764587
+873bb246c889012c9e873ce9c2df4a946a30e8cd116de383f8eb0967ced832b9  sw_s12800.pth     391818938 B   val500 0.766757  <- 最终输出模型
+
+说明：
+1. v2 / r2 / r3 为中间权重，未随包提供，可按 REPRODUCE_DECODER_CHAIN.md 的命令逐段复现；
+   若审核需要，可随时提供。
+2. 权重为 state_dict（含 ema 与 model 两套键），推理使用 ema。
+3. 跨 GPU/系统重训的权重不会与上述哈希逐字节一致，应以重新评测为准。

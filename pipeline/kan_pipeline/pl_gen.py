@@ -84,7 +84,7 @@ def main():
         "coverage_scope": "all pixels of all 500 images",
         "total_pixels": total_pixels,
         "coverage": {str(t): retained[t] / total_pixels for t in thresholds},
-        "retained_pixels": {str(t): retained[t] for t in thresholds},
+        "retained_pixels": {str(t): retained[t] for t in thresholds}
     }
     report_path = os.path.join(OUT, "_CONFIDENCE_REPORT.json")
     temporary = report_path + ".tmp"

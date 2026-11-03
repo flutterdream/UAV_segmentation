@@ -23,6 +23,6 @@ official_data/
 
 训练图像和标签为1024×1024；标签单通道、类别ID为0至8。类别0忽略，1至8为背景、建筑、道路、水体、荒地、植被、农田、车辆。test1/test2不提供或使用人工真实标签。
 
-Docker操作见DOCKER_RUN.md：将此外部目录只读挂载到 `/workspace/submission/official_data`，即可保持所有训练、验证和预测入口不变。先运行verify核对输入。直接在本地运行时，可将赛事方数据放到算法目录的official_data下，或建立指向外部数据的目录链接；不要将其重新加入预测包。
+Docker操作见DOCKER_RUN.md：将此外部目录只读挂载到 `/workspace/output/official_data`，即可保持所有训练、验证和预测入口不变。先运行verify核对输入。直接在本地运行时，可将赛事方数据放到算法目录的official_data下，或建立指向外部数据的目录链接；不要将其重新加入预测包。
 
 configs/TEST2_FILENAMES.json只保存1300个原始测试文件名，用于校验预测ZIP，不包含原始图像。公开学术权重及训练需要的小型划分/采样统计随代码提供，完整复现仍从官方标签重新计算和核对统计。

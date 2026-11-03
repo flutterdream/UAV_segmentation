@@ -1,0 +1,19 @@
+{
+  "stage": "kan_stage47_segformer_rebuilt",
+  "crop": 1024,
+  "batch_size": 8,
+  "seed": 17,
+  "target_iters": 4000,
+  "restart_lr": 0.25,
+  "tau": 0.85,
+  "teacher_hflip": true,
+  "ignore_anchor_conflict": true,
+  "source_supervised": 0.2,
+  "ema_decay": 0.999,
+  "full_image_scale_up": true,
+  "scale_min": 0.75,
+  "scale_max": 1.5,
+  "final_inference": "ms2",
+  "true_batch_required": true,
+  "gradient_accumulation": 1
+}

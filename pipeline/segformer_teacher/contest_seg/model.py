@@ -160,7 +160,7 @@ class EdgeRefineSegFormer(nn.Module):
             "coarse_logits": coarse_logits,
             "boundary_logits": boundary_logits,
             "residual_half": residual_half,
-            "gate": gate,
+            "gate": gate
         }
 
     def forward(self, x):
@@ -378,7 +378,7 @@ def _segformer_config(name, num_classes):
         "segformer_b2": ([3, 4, 6, 3], 768),
         "segformer_b3": ([3, 4, 18, 3], 768),
         "segformer_b4": ([3, 8, 27, 3], 768),
-        "segformer_b5": ([3, 6, 40, 3], 768),
+        "segformer_b5": ([3, 6, 40, 3], 768)
     }
     depths, decoder_hidden_size = variants[name]
     return SegformerConfig(
@@ -431,7 +431,7 @@ def build_model(name="simple_unet", num_classes=NUM_CLASSES, pretrained=False):
             incompatible = model.backbone.load_state_dict(weights, strict=False)
             if incompatible.missing_keys or set(incompatible.unexpected_keys) != {
                 "fc.bias",
-                "fc.weight",
+                "fc.weight"
             }:
                 raise ValueError(
                     "Unexpected UNetFormer backbone checkpoint keys: "

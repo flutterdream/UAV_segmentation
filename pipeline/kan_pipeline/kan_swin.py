@@ -674,7 +674,7 @@ def infer(a):
     model, iters = load_trained(b2_kan=b2, pl=pl, enc=enc, path=getattr(a, "ckpt", None)); model.eval()
     bias = load_bias()
     route = "ms2"  # 8路TTA已在两个验证切片上稳定优于ms (+0.35/+0.40)
-    out_dir = os.path.join(ARTIFACT_ROOT, "submission_test1_kan" + ("_t" if enc == "swin_t" else "")
+    out_dir = os.path.join(ARTIFACT_ROOT, "predictions_test1_kan" + ("_t" if enc == "swin_t" else "")
                            + ("_anchor" if getattr(a, "anchor", False)
                               else "_pl" if pl else "") + ("_b2" if b2 else "") + "_" + route
                            + ("_cal" if bias is not None else ""))

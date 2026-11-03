@@ -54,7 +54,7 @@ def main():
         "allowed_labels": [1, 2, 3, 4, 5, 6, 7, 8],
         "class_pixels": {str(index): int(counts[index]) for index in range(1, 9)},
         "dimensions": dimensions,
-        "sha256": file_hashes,
+        "sha256": file_hashes
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

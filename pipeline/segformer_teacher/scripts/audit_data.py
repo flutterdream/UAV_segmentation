@@ -98,10 +98,10 @@ def main():
                     None if index == 0 else float(total_pixels[index] / valid_pixels)
                 ),
                 "images_present": int(image_presence[index]),
-                "image_presence_ratio": float(image_presence[index] / len(train_masks)),
+                "image_presence_ratio": float(image_presence[index] / len(train_masks))
             }
             for index, name in enumerate(CLASS_NAMES)
-        },
+        }
     }
     with open(output_dir / "summary.json", "w", encoding="utf-8") as stream:
         json.dump(summary, stream, ensure_ascii=False, indent=2)

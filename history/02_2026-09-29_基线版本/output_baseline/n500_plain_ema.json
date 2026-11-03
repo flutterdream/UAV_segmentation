@@ -1,0 +1,17 @@
+{
+  "route": "plain",
+  "validation_count": 500,
+  "miou": 0.7583300726470655,
+  "class_iou": {
+    "Background": 0.6488195117202701,
+    "Building": 0.8532366302961999,
+    "Road": 0.7735605298356142,
+    "Water": 0.8919936916176187,
+    "Barren": 0.5066643947647443,
+    "Vegetation": 0.8749035423771081,
+    "Agricultural": 0.7644090877155915,
+    "Vehicle": 0.7530531928493771
+  },
+  "duration_seconds": 124.08451839999998,
+  "result_prediction": false
+}

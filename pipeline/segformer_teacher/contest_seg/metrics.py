@@ -37,6 +37,6 @@ class SegmentationMetrics:
             "per_class_iou": {
                 name: None if np.isnan(value) else float(value)
                 for name, value in zip(CLASS_NAMES, iou)
-            },
+            }
         }
 

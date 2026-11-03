@@ -88,7 +88,7 @@ def main():
     ilog = open(OUT / "infer_sw.log", "w")
     subprocess.run(cmd2, cwd=str(S), stdout=ilog, stderr=subprocess.STDOUT)
     ilog.close()
-    st(stage="done", zip=str(ROOT / f"submission_P0_sw{best['snapshot']}.zip"),
+    st(stage="done", zip=str(ROOT / f"predictions_P0_sw{best['snapshot']}.zip"),
        minutes=round((time.time() - t0) / 60, 1))
 
 

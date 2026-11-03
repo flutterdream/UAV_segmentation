@@ -224,7 +224,7 @@ def compact_checkpoint(model, model_name, epoch, args, report):
         "epoch": epoch,
         "metrics": report,
         "args": vars(args),
-        "teacher_ema": True,
+        "teacher_ema": True
     }
 
 
@@ -486,7 +486,7 @@ def main():
                     "pseudo_coverage": float(coverage),
                     "target_weight": target_weight,
                     "seconds_per_step": elapsed / steps,
-                    "learning_rate": optimizer.param_groups[0]["lr"],
+                    "learning_rate": optimizer.param_groups[0]["lr"]
                 }
                 if device.type == "cuda":
                     payload["cuda_memory_gb"] = (
@@ -525,10 +525,10 @@ def main():
                     "predicted_pixels": predicted_cpu[class_id],
                     "retained_pixels": retained_cpu[class_id],
                     "retained_ratio": retained_cpu[class_id]
-                    / max(predicted_cpu[class_id], 1),
+                    / max(predicted_cpu[class_id], 1)
                 }
                 for class_id in range(8)
-            },
+            }
         }
         history.append(report)
         print(json.dumps(report, ensure_ascii=False), flush=True)
@@ -549,7 +549,7 @@ def main():
                     target_probability_ema.cpu()
                     if target_probability_ema is not None
                     else None
-                ),
+                )
             },
             output_dir / "last.pt",
         )
