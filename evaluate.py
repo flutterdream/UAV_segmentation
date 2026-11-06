@@ -38,7 +38,7 @@ PASSES = [(1.0, False), (1.0, True), (0.75, False), (0.75, True),
 
 
 def load_model(ckpt, device):
-    payload = torch.load(ckpt, map_location="cpu", weights_only=False)
+    payload = torch.load(ckpt, map_location="cpu", weights_only=True)
     if not isinstance(payload, dict) or "ema" not in payload:
         raise SystemExit("权重文件缺少 ema 参数，请确认是否为训练产出的 .pth")
     model = DeepKANSegSwin(NUM_CLASSES, enc_weights=None)  # 权重由 ckpt 提供，无需联网
